@@ -1,0 +1,23 @@
+Example 9: Working with date and timestamp
+
+Using the system date and timestamp helps in certain status or logging purposes. 
+The Ansible facts provide access to remote or target servers date and time.
+ So we can use the debug module to print the output along with the var attribute as shown below.
+
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Date and Time Example in Ansible
+    debug:
+     var=ansible_date_time.date
+The above playbook displays the date.
+
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Date and Time Example in Ansible
+  debug:
+   var=ansible_date_time.time
+The above playbook displays the time.

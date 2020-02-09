@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Create User
+    user: name=niranjan password=niranjan groups=ansible shell=/bin/bash
+=====================
+Create a user. Let’s look at the user module to create and delete users in the playbook.
+

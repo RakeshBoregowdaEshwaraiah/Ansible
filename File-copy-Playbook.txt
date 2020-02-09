@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Copy content to file
+    copy: content="Hello World Rakesh \n" dest=/home/ansible/rakesh.txt
+==================
+copy: src=/home/ansible/niranjan.txt dest=/tmp/niranjan.txt
+
+If you need to copy a file to the target machines or servers use the src and dest in the copy module.
+

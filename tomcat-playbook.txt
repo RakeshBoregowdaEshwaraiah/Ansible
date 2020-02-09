@@ -1,0 +1,9 @@
+--- Playbook start
+- hosts: webservers Specify the group or servers as per inventory to execute tasks
+  become: true
+  tasks:
+  - name: Copy Tomcat ZIP file to install location Short description of the task
+    copy: src=/home/ansible/rakesh/apache-tomcat-8.5.31.tar.gz dest=/opt/rakesh/tomcat
+======================
+To run any playbook use the following command
+$ ansible-playbook <playbook.yml>

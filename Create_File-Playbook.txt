@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Create a file
+    file: path=/home/ansible/rakesh.txt state=touch
+=====================
+In the above example, I have used the file module to create the file.
+

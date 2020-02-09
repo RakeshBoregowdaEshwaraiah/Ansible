@@ -1,0 +1,14 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Remove User
+    user:
+    name=niranjan state=absent remove=yes force=yes
+==================================================
+In the above playbook, remove=yes will remove the home directory and force=yes will remove the files in the directory.
+
+Remove user. 
+Removing a user is very easy and it will need the state to be set to absent. 
+This is equivalent to the userdel command in Linux.
+
