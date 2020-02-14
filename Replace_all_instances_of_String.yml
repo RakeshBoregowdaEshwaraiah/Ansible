@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  tasks:
+  - name: Replace example
+    replace:
+     path: /home/ansible/rakesh.txt
+     regexp: 'hello'
+     replace: "world"
+=============================
+Using replace module we can replace a word with another word. The replace module will need 3 parameters i.e. ‘path’, ‘regexp’ (to find the particular word) and ‘replace’ (providing another word for replacement).
+
