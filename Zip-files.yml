@@ -1,6 +1,6 @@
 Archive or ZIP files and Folders
 
-Using the Ansible archive module you can compress files or folders to ‘zip’, ‘.gz’, or ‘bz2’ format.
+Using the Ansible archive module you can compress files or folders to â€˜zipâ€™, â€˜.gzâ€™, or â€˜bz2â€™ format.
 
 Note: The files or folders to be compressed should be available on the target servers and should have the packages for tar, bzip2, gzip, zip file installed on them. You can have a separate playbook task for installing these packages.
 
