@@ -1,0 +1,8 @@
+ansible@localhost$ vim test.yml
+- name: Install Jenkins
+  hosts: localhost
+  become: true
+  roles:
+    - jenkins
+    
+    #ansible@localhost$ ansible-playbook -i hosts test.yml
