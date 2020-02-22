@@ -1,0 +1,8 @@
+ansible@localhost$ vim test.yml
+- name: Install Oracle Java
+  hosts: localhost
+  become: true
+  roles:
+    - oracle-java
+    
+    #ansible@localhost$ ansible-playbook -i hosts test.yml
